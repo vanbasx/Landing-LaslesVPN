@@ -1,1 +1,11 @@
-// Заголовки, общие БЄМ блоки и проче...
+.button-radius {
+  border: 2px solid $accent-color;
+  color: $accent-color;
+  padding: 13px 45px;
+  border-radius: 50px;
+  transition: color .2s ease, background-color .3s ease;
+  &:hover {
+    background-color: $accent-color;
+    color: #fff;
+  }
+}
