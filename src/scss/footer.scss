@@ -37,9 +37,26 @@
   }
   // .footer__info-links
   &__info-links {
+    @include adaptiveValue("padding-top",30 ,20 );
+    @include adaptiveValue("padding-bottom",20 ,10 );
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
   // .footer__info-link
   &__info-link {
+    svg {
+      circle {
+        transition: fill .3s ease;
+      }
+    }
+    &:hover {
+      svg {
+        circle {
+          fill: red;
+        }
+      }
+    }
   }
   // .footer__info-copyright
   &__info-copyright {
