@@ -50,6 +50,7 @@ $responsiveType: 1;
 @import "base/null";
 
 body {
+	
 	// Скролл заблокирован
 	.lock & {
 		overflow: hidden;

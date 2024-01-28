@@ -34,8 +34,10 @@
 	&__button--dark {
 		transition: color .2s ease;
 		padding: 15px;
-		&:hover {
-			color: $accent-color;
+		@media (hover: hover) {
+			&:hover {
+				color: $accent-color;
+			}
 		}
 	}
 
@@ -77,8 +79,10 @@
 	// .menu__link
 	&__link {
 		transition: color .2s ease;
-		&:hover {
-			color: $accent-color;
+		@media (hover: hover) {
+			&:hover {
+				color: $accent-color;
+			}
 		}
 	}
 }

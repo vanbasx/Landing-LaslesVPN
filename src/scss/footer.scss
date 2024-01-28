@@ -1,3 +1,94 @@
-//====================================================================================================
 
 //====================================================================================================
+
+.footer {
+  background-color: #F8F8F8;
+  @include adaptiveValue("padding-top",180 ,120 );
+  @include adaptiveValue("padding-bottom",100 ,40 );
+  // .footer__container
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    @include adaptiveValue("gap",100 ,30 );
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+  }
+  // .footer__info
+  &__info {
+    line-height: 30px;
+    @media (max-width: 900px) {
+      margin: 0 auto;
+    }
+    @media (max-width: 460px) {
+      width: 90%;
+    }
+  }
+  // .footer__info-logo
+  &__info-logo {
+  }
+  // .footer__info-text
+  &__info-text {
+    @include adaptiveValue("padding-top",20 ,10 );
+    max-width: 340px;
+    @media (max-width: 900px) {
+      max-width: clamp(25.5rem, 16.125rem + 33.33vw, 34.875rem);
+    }
+  }
+  // .footer__info-links
+  &__info-links {
+  }
+  // .footer__info-link
+  &__info-link {
+  }
+  // .footer__info-copyright
+  &__info-copyright {
+    color: #afb5c0;
+  }
+  // .footer__link-lists
+  &__link-lists {
+    display: flex;
+    gap: clamp(3.125rem, -14.453rem + 31.25vw, 7.813rem);
+    line-height: 30px;
+    @media (max-width: 900px) {
+      margin: 0 auto;
+      width: clamp(25.5rem, 16.125rem + 33.33vw, 34.875rem);
+      gap: 45px;
+      justify-content: space-between;
+    }
+    @media (max-width: 460px) {
+      flex-wrap: wrap;
+      width: 90%;
+    }
+  }
+  // .footer__links
+  &__links {
+  }
+  // .footer__list-title
+  &__list-title {
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: $dark-color;
+  }
+  // .footer__list
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  // .footer__list-item
+  &__list-item {
+
+  }
+  // .footer__list-link
+  &__list-link {
+    @media (hover: hover) {
+      &:hover {
+        transition: .2s ease;
+        color: $accent-color;
+      }
+    }
+  }
+}
+
