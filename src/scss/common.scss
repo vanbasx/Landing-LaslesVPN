@@ -4,11 +4,14 @@
   color: $accent-color;
   padding: 13px 45px;
   border-radius: 50px;
-  transition: color .2s ease, background-color .3s ease;
+  transition: all .3s ease;
   @media (hover: hover) {
     &:hover {
       background-color: $accent-color;
       color: #fff;
+      -webkit-box-shadow: 0px 21px 48px -16px rgba(245, 56, 56, 0.91);
+      -moz-box-shadow: 0px 21px 48px -16px rgba(245, 56, 56, 0.91);
+      box-shadow: 0px 21px 48px -16px rgba(245, 56, 56, 0.91);
     }
   }
 }
@@ -258,6 +261,9 @@
 //===================================PRICING=====================================================================================================================
 
 .pricing {
+  padding-top: clamp(2.5rem, 1.524rem + 4.88vw, 5rem);
+  padding-bottom: clamp(4.375rem, 2.424rem + 9.76vw, 9.375rem);
+
   background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0.00) 88.56%);
   // .pricing__container
   &__container {
@@ -272,7 +278,7 @@
     text-align: center;
     max-width: 555px;
     margin: 0 auto;
-    padding-bottom: 60px;
+    padding-bottom: clamp(1.875rem, 1.143rem + 3.66vw, 3.75rem);
   }
   // .pricing__cards
   &__cards {
@@ -300,10 +306,19 @@
         transform: translateY(-15px);
       }
     }
+    @media (max-width: 390px) {
+      margin: 0 auto;
+      padding: clamp(3.125rem, -5.446rem + 42.86vw, 5rem) 15px;
+      width: 100%;
+    }
   }
   // .pricing__card-top
   &__card-top {
     padding-bottom: 50px;
+  }
+  &__card-wrapper {
+    display: flex;
+    justify-content: center;
   }
   // .pricing__card-img
   &__card-img {
@@ -324,6 +339,7 @@
   }
   // .pricing__card-list
   &__card-list {
+    
   }
   // .pricing__card-item
   &__card-item {
@@ -362,3 +378,32 @@
 }
 
 //===================================/PRICING=====================================================================================================================
+
+//===================================MAP=====================================================================================================================
+
+.map {
+  // .map__container
+  &__container {
+  }
+  // .map__title
+  &__title {
+    text-align: center;
+    max-width: 390px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  // .map__subtitle
+  &__subtitle {
+    text-align: center;
+    max-width: 555px;
+    margin: 0 auto;
+    padding-bottom: 150px;
+  }
+  // .map__img
+  &__img {
+    width: 100%;
+    padding-bottom: 35px;
+  }
+}
+
+//===================================/MAP=====================================================================================================================
