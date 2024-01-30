@@ -51,6 +51,7 @@
     gap: 30px;
     @media (max-width: 890px) {
       flex-direction: column;
+      gap: clamp(3.125rem, 2.423rem + 3.51vw, 4.375rem);
     }
   }
   // .hero__info
@@ -382,6 +383,7 @@
 //===================================MAP=====================================================================================================================
 
 .map {
+  padding-bottom: clamp(2.813rem, 1.715rem + 5.49vw, 5.625rem);
   // .map__container
   &__container {
   }
@@ -397,13 +399,195 @@
     text-align: center;
     max-width: 555px;
     margin: 0 auto;
-    padding-bottom: 150px;
+    padding-bottom: clamp(1.875rem, -1.052rem + 14.63vw, 9.375rem);
   }
   // .map__img
   &__img {
     width: 100%;
-    padding-bottom: 35px;
   }
 }
 
 //===================================/MAP=====================================================================================================================
+
+//===================================TESTIMONIALS=====================================================================================================================
+
+.testimonials {
+  padding-bottom: 65px;
+  // .testimonials__container
+  &__container {
+  }
+  // .testimonials__title
+  &__title {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 480px;
+    padding-bottom: 20px;
+  }
+  // .testimonials__subtitle
+  &__subtitle {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 555px;
+    padding-bottom: clamp(1.875rem, 1.143rem + 3.66vw, 3.75rem);
+  }
+  // .testimonials__slider
+  &__slider {
+    width: 1300px;
+    padding-bottom: 60px;
+    @media (max-width: 485px) {
+      width: 100%;
+      display: flex;
+      gap: 30px;
+    }
+  }
+  // .testimonials__wrapper
+  &__wrapper {
+    align-items: stretch !important;
+  }
+  // .testimonials__slide
+  &__slide {
+    width: 400px;
+    min-height: 230px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid #DDD;
+    padding: clamp(0.938rem, 0.572rem + 1.83vw, 1.875rem);
+  }
+}
+.swiper-slide-active {
+  border-color: $accent-color;
+  -webkit-box-shadow: 8px 3px 100px -3px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 8px 3px 100px -3px rgba(0, 0, 0, 0.09);
+  box-shadow: 8px 3px 100px -3px rgba(0, 0, 0, 0.09);
+  transition: all .8s ease;
+}
+
+.slide {
+  // .slide__header
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8px;
+  }
+  // .slide__header-user
+  &__header-user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  // .slide__header-img
+  &__header-img {
+  }
+  // .slide__header-info
+  &__header-info {
+  }
+  // .slide__header-name
+  &__header-name {
+    color: $dark-color;
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; 
+  }
+  // .slide__header-location
+  &__header-location {
+    
+  }
+  // .slide__header-grade
+  &__header-grade {
+    color: $dark-color;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+    position: relative;
+    margin-right: 19px;
+    &::after {
+      content: url(@img/icons/star.svg);
+      position: absolute;
+      top: 2px;
+      right: -23px;
+    }
+  }
+  // .slide__description
+  &__description {
+    color: $dark-color;
+
+    font-size: clamp(0.875rem, 0.826rem + 0.24vw, 1rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+  }
+}
+.swiper-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.swiper-pagination {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color:#DDD;
+}
+
+.swiper-pagination-bullet-active {
+  width: 45px;
+  border-radius: 25px;
+  background-color: $accent-color;
+  transition: all .2s ease;
+}
+
+.swiper-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.swiper-button-prev {
+  width: 60px;
+  height: 60px;
+  border: 2px solid $accent-color;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .2s ease;
+  &:hover {
+    background-color: $accent-color;
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+}
+.swiper-button-next {
+  width: 60px;
+  height: 60px;
+  border: 2px solid $accent-color;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(180deg);
+  transition: all .2s ease;
+  &:hover {
+    background-color: $accent-color;
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+}
+
+//===================================/TESTIMONIALS=====================================================================================================================
