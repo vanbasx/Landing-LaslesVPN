@@ -2,6 +2,7 @@
 
 This repository contains the source code for the LaslesVPN landing page, a responsive web page built using Gulp, Webpack, HTML, CSS (with SCSS), JavaScript, and Swiper.js for carousel functionality.
 
+
 ## Features
 
 - Responsive Web Design (RWD) for optimal viewing on various devices.
@@ -50,3 +51,6 @@ This will generate optimized and minified files in the dist directory.
 ## Contributing
 
 Feel free to contribute by submitting issues or pull requests. Make sure to follow the project's coding style and conventions.
+
+![image](https://github.com/vanbasx/Landing-LaslesVPN/assets/131404622/a902135e-59fe-4509-a56d-5765df34b2ce)
+
