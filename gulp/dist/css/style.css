@@ -164,6 +164,11 @@ h6 {
   line-height: 30px;
 }
 
+.logo img {
+  width: 150px;
+  height: 37px;
+}
+
 @supports (padding-top: clamp( 1.875rem , -0.0073529412rem  +  9.4117647059vw , 6.875rem )) {
   .hero {
     padding-top: clamp( 1.875rem , -0.0073529412rem  +  9.4117647059vw , 6.875rem );
@@ -208,7 +213,7 @@ h6 {
 
 .hero__info-title {
   color: #0B132A;
-  font-size: clamp(2.188rem, 1.7rem + 2vw, 3.125rem);
+  font-size: clamp(2rem, 1.561rem + 2.2vw, 3.125rem);
   font-style: normal;
   font-weight: 500;
   line-height: clamp(2.813rem, -2.75rem + 10vw, 4.375rem);
@@ -289,6 +294,11 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   gap: 36px;
+}
+
+.hero__about-img {
+  width: 55px;
+  height: 55px;
 }
 
 .hero__about-quantity {

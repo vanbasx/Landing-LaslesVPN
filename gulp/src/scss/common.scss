@@ -33,6 +33,13 @@
   line-height: 30px;
 }
 
+.logo {
+  img {
+    width: 150px;
+    height: 37px;
+  }
+}
+
 //===================================HERO=====================================================================================================================
 
 
@@ -61,7 +68,7 @@
   // .hero__info-title
   &__info-title {
     color: $dark-color;
-    font-size: clamp(2.188rem, 1.7rem + 2vw, 3.125rem);
+    font-size: clamp(2rem, 1.561rem + 2.2vw, 3.125rem);
     font-style: normal;
     font-weight: 500;
     line-height: clamp(2.813rem, -2.75rem + 10vw, 4.375rem);
@@ -170,6 +177,8 @@
   }
   // .hero__about-img
   &__about-img {
+    width: 55px;
+    height: 55px;
   }
   // .hero__about-info
   &__about-info {
